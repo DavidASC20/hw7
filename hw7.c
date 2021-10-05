@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+
 int printarr(int arr[], int len);
 double avgArr(int arr[], int len);
 int copy(int arr[], int copy[], int len);
@@ -45,6 +46,7 @@ int main(){
     printf("%f", avgArr(arr, len));
     int copyarr[5];
     copy(arr, copyarr, len);
-    printf("\nCopied\n");
-    printarr(copy, len);
+    printf("Copied\n");
+    printarr(copyarr, len);
+    return 0;
 }
